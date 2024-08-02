@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply mx-auto;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+}
+.hover_active{
+    @apply absolute -top-4 left-1/2 -translate-x-[62%] bg-gray-900 text-white px-2 rounded-full text-xs opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all;
+}
+
+.alert.alert-success {
+    @apply bg-green-700 px-2 py-2 absolute top-[120px] right-[60px] text-white rounded-lg;
+}
+.btn{
+    @apply flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600;
+}
+.btn_primary{
+    @apply px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600;
+}
+.short_btn{
+    @apply px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600;
+}
+
